@@ -16,5 +16,9 @@ def main(wellen: Waveform):
 
 
 if __name__ == "__main__":
+    print("Testing GHW file")
     wellen = Waveform("CustomWrapper_tb.ghw")
+    main(wellen)
+    print("Testing vcd file")
+    wellen = Waveform("CustomWrapper_tb.vcd")
     main(wellen)
